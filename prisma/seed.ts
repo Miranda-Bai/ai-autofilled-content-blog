@@ -226,10 +226,13 @@ async function main() {
   console.log(`Seeding finished.`);
 }
 
-// execuating main function
+// executing main function
+/* add '"prisma": {
+  "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
+},' to package.json and run 'npx prisma db seed' */
 main()
   .then(async () => {
-    // after execuating main function, disconnect the database
+    // after executing main function, disconnect the database
     await prisma.$disconnect();
   })
   .catch(async (e) => {

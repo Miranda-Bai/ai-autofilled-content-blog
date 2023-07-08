@@ -69,3 +69,14 @@ npm install next@latest react@latest react-dom@latest
 
 2. JSX element implicitly has type 'any' because no interface 'JSX.IntrinsicElements' exists.ts(7026)
 npm i --dev @types/react
+
+3. An error occurred while running the seed command:
+Error: Command failed with ENOENT: ts-node --compiler-options {"module":"CommonJS"} prisma/seed.ts
+spawn ts-node ENOENT
+
+npm i ts-node@latest -D
+
+# npx prisma studio
+to create alternative view on browser.
+
+# api floder is acutally the backend logic

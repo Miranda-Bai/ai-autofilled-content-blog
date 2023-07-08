@@ -1,9 +1,12 @@
 import React from "react";
 import Card from "app/(shared)/Card";
+import { Post } from "@prisma/client";
 
-type Props = {};
+type Props = {
+  posts: Array<Post>;
+};
 
-const Tech = (props: Props) => {
+const Tech = ({ posts }: Props) => {
   return (
     <section>
       <hr className="border-1" />
@@ -28,25 +31,29 @@ const Tech = (props: Props) => {
       <div className="sm:grid grid-cols-2 grid-rows-3 gap-x-8 gap-y-8 my-5">
         {/* large card */}
         <Card
-          className="bg-wh-500 col-span-1 row-span-3"
+          className="col-span-1 row-span-3"
           imageHeight="h-96"
           isLongForm
+          post={posts[0]}
         />
         {/* small cards */}
         <Card
-          className="bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+          className="col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
           imageHeight="h-48"
           isSmallCard
+          post={posts[1]}
         />
         <Card
-          className="bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+          className="col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
           imageHeight="h-48"
           isSmallCard
+          post={posts[2]}
         />
         <Card
-          className="bg-wh-500 col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
+          className="col-span-1 row-span-1 mt-10 sm:mt-0 flex justify-between gap-3"
           imageHeight="h-48"
           isSmallCard
+          post={posts[3]}
         />
       </div>
     </section>
