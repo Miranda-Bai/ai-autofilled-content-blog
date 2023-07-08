@@ -1,5 +1,9 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## in Next.js 13 every component is a server side component by default
+change component to client component
+add "use client" on the top of the component file
+
 ## Getting Started
 
 First, run the development server:
@@ -59,6 +63,9 @@ Next steps:
 
 More information in our documentation:
 https://pris.ly/d/getting-started
+
+# install Tiptap text editor
+npm install @tiptap/react @tiptap/pm @tiptap/starter-kit
 
 # resolving npm no access error
 sudo chown -R $(whoami) ~/.npm
