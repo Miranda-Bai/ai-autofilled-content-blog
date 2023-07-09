@@ -25,6 +25,7 @@
     "@tiptap/starter-kit": "^2.0.3",
     "@types/react": "^18.2.14",
     "axios": "^1.4.0",
+    "eslint-config-next": "^13.4.9",
     "next": "^13.4.8",
     "openai": "^3.3.0",
     "react": "^18.2.0",

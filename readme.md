@@ -96,3 +96,7 @@ npm i ts-node@latest -D
 to create alternative view on browser.
 
 # api floder is acutally the backend logic
+
+## deploying on Vercel
+npm install --save-dev eslint
+npm install eslint-config-next
