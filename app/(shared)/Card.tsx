@@ -19,8 +19,8 @@ const Card = ({
   post,
 }: Props) => {
   const { id, title, author, createdAt, image, snippet } = post || {};
-  const date = new Date(createdAt);
 
+  const date = new Date(createdAt);
   const options = { year: "numeric", month: "long", day: "numeric" } as any;
   const formatDate = date.toLocaleDateString("en-US", options);
 

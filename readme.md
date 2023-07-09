@@ -64,8 +64,17 @@ Next steps:
 More information in our documentation:
 https://pris.ly/d/getting-started
 
+## PlanetScale cert
+# adding '&&sslcert=/etc/ssl/cert.pem' to the end of the 'DATABASE_URL' string when connecting from local server.
+# adding '&&sslcert=/etc/pki/tls/certs/ca-bundle.crt' to the end of the 'DATABASE_URL' string when connecting from online server or platform (RedHat / Fedora / CentOS / Mageia / Vercel / Netlify).
+
+
 # install Tiptap text editor
 npm install @tiptap/react @tiptap/pm @tiptap/starter-kit
+
+# install OpenAI
+npm install openai
+error && need to add payment in OpenAI: You've reached your usage limit. See your usage dashboard and billing settings for more details. If you have further questions, please contact us through our help center at help.openai.com.
 
 # resolving npm no access error
 sudo chown -R $(whoami) ~/.npm
