@@ -29,7 +29,7 @@ module.exports = {
     },
   },
   plugins: [
-    require("@tailwindcss/line-clamp"),
+    // require("@tailwindcss/line-clamp"), // included by default now.
     require("@tailwindcss/typography"),
   ],
 };
