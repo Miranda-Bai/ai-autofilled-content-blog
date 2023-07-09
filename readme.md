@@ -100,4 +100,6 @@ to create alternative view on browser.
 ## deploying on Vercel
 npm install --save-dev eslint
 npm install eslint-config-next
-npm i @prisma/client 
+
+solving prisma client error:
+npx prisma generate && next build
